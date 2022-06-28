@@ -4,6 +4,8 @@ from django.db import models
 
 
 class Post(models.Model):
+    objects = models.Manager()
+
     text = models.TextField()
 
     def __str__(self):
